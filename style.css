@@ -1,0 +1,135 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(69, 97, 18);
+    color: rgb(233, 184, 128);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+}
+
+header{
+    font-size: 1.2rem;
+}
+
+.counter{
+    text-align: center;
+    color: white;
+    /* border: 1px solid white; */
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+header, form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button{
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    background-color: white;
+}
+input,button:focus{
+    outline: none;
+}
+
+form button{
+    color: rgb(100, 102, 204);
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+form button:hover{
+    background-color: #85fdfd;
+    color: white;
+}
+
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.todo-list{
+    list-style: none;
+    min-width: 30%;
+}
+
+
+.todo{
+    margin: 0.5rem;
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease;
+}
+
+
+.todo li{
+    flex: 1;
+}
+
+.complete-btn, .delete-btn{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.complete-btn{
+    background-color: rgb(100, 189, 100);
+}
+
+.todo-item{
+    padding: 0rem 0.5rem;
+}
+
+.fa-check, .fa-trash{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+/* ---clear button--- */
+.clear{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clear-btn{
+    margin: 40px auto;
+    width: 120px;
+    height: 45px;
+    font-size: 1.2rem;
+    background-color: rgb(100, 102, 204);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 22px;
+}
+
+.clear-btn:hover{
+    background-color: hsl(231deg 53% 10%);
+    box-shadow: 0px 0px 15px yellow;
+}
